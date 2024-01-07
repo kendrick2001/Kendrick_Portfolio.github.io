@@ -1,0 +1,464 @@
+*{
+    scroll-behavior: smooth;/*lo que estoy haciendo que es que cuando nos movamos por la pagina el scroll o el movimiento no sea tan tosco sino que suave y viendo el movimiento hacia donde nos queremos dirigir*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    padding: 100px;
+}
+/*ESTAS PROPIEDADES Y ESTILOS SERÁN PARA EL HTML DE KOHH HTML Y EMPIEZA A PARTIR DE AQUI*/
+.baner{/*va a ser la exposicion sobre la pagina agregando una imagen de fondo posicionamento al bloque tamaño y centrando el texto*/
+    position: relative;
+    min-height: 100vh;
+    background: url(../imagenes/backblack.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.baner h2{/*estoy diciendo que el h2 que esta dentro de banner tenga estas propiedades de tamaño y color en la letra*/
+    font-size: 3em ;
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 1.5em;
+}/*estoy diciendo que todo lo que este dentro de banner dentro de h2 que sera span tenga este tamaño significativo*/
+.baner h2 span{
+    font-size: 1em;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.baner h3{/*letra pequeña debajo del span*/
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.bit{/*sera la cajita es decir la propiedad uppercase osea la tansformacion del texto para dar mas informacion y llevarlo a otro enlace interno*/
+    position: relative;
+    background: #2196f3 ;
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:  18px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+/*ESTAS PROPIEDADES Y ESTILOS SERÁN PARA EL HTML DE TATTOO DOGS HTML Y EMPIEZA A PARTIR DE AQUI*/
+.ban{/*va a ser la exposicion sobre la pagina agregando una imagen de fondo posicionamento al bloque tamaño y centrando el texto*/
+    position: relative;
+    min-height: 100vh;
+    background: url(../imagenes/backblack.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ban h2{/*estoy diciendo que el h2 que esta dentro de banner tenga estas propiedades de tamaño y color en la letra*/
+    font-size: 3em ;
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 1.5em;
+}/*estoy diciendo que todo lo que este dentro de banner dentro de h2 que sera span tenga este tamaño significativo*/
+.ban h2 span{
+    font-size: 1em;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.ban h3{/*letra pequeña debajo del span*/
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.btc{/*sera la cajita es decir la propiedad uppercase osea la tansformacion del texto para dar mas informacion y llevarlo a otro enlace interno*/
+    position: relative;
+    background: #2196f3 ;
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:  18px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+/*ACABA JUSTO AQUI SUS PROPIEDADES PARA EL ENCABEZADO Y LA PRESENTACION DEL HTML , SOLO HE HECHO UN COPIA Y PEGA DE LAS PROPIEDAS QUE HICE EN EL PRIMERA HTML QUE ESTA JUSTO AQUI ABAJO ,ES DECIR , EL DE ABAJO ES EL ORIGINAL*/
+.banner{/*va a ser la exposicion sobre la pagina agregando una imagen de fondo posicionamento al bloque tamaño y centrando el texto*/
+    position: relative;
+    min-height: 100vh;
+    background: url(../imagenes/backblack.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{/*estoy diciendo que el h2 que esta dentro de banner tenga estas propiedades de tamaño y color en la letra*/
+    font-size: 3em ;
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 1.5em;
+}/*estoy diciendo que todo lo que este dentro de banner dentro de h2 que sera span tenga este tamaño significativo*/
+.banner h2 span{
+    font-size: 1em;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.banner h3{/*letra pequeña debajo del span*/
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.btn{/*sera la cajita es decir la propiedad uppercase osea la tansformacion del texto para dar mas informacion y llevarlo a otro enlace interno*/
+    position: relative;
+    background: #2196f3 ;
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size:  18px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+header{/*basicamente le estoy poniendo sus propiedades al encabezado para que se vea bonito*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}/*he hecho un encabezado donde irá el menú desplegable y el logo ademas irá el logo a la izquiera y las listas o menus a la derecha*/
+header.sticky{/*lo que estoy haciendo es que el encabezado cuando bajemos se oculte y la transicion sera de x segundos*/
+    background: whitesmoke;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+    color: whitesmoke;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}/*lo que he hecho es crear un logo en transformado el texto en cartel o caja y lo he dejado a la izquierda*/
+header.sticky .logo{/*lo que estoy haciendo es que la etiqueta logo se convierto de en color negro cuando vayamos bajando por la pagina web*/
+    color: black;
+}
+header ul{ 
+    position: relative;
+    display: flex;
+}/*lo que he hecho es poner la lista seguida */
+header ul li{
+    position: relative;
+    list-style: none;
+} 
+header ul li a{/*las letras se quedaran estaticas mientras vayamos hacia abajo se seguiran viendo*/
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+header.sticky ul li a{/*lo que hago es que las listas se conviertan en color negro cuando bajamos por la web*/
+    color: black;
+}
+.heading{/*lo que hago es centrar el encabezado*/
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2{/*el sobre nosotros le vamos a modificar el estilo*/
+    font-weight: 600;
+    font-size: 30px;
+}
+.content{/*modificamos el bloque llamado content y todo lo qaue se le haga se lo aplicamos a las etiquetas que tengo dentro*/
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx{
+    padding-right: 30px;
+}
+.contentBx h3{/*el texto tendra un margen y la letra un tamaño especifico*/
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50{/*le aplico un diferente tamaño a la cajita de la imagen*/
+    min-width: 25%;
+}
+img{/*la imagen tendra este tamaño maximo asi cuando querramos hacerle zoom se limitira a este tamaño*/
+    max-width: 100%;
+}
+.servicios{/*todo lo que este dentro de la clase section tendra un fondo de color negro*/
+    background: #111;
+}
+.heading.white{/*todo los textos del encabezado tendran el color blanco*/
+    color: #fff;
+}
+.servicios .content{/*todo lo que este dentro de servicios dentro de content tendran estas propiedades*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.servicios .content .serviciosB{/*todo lo que este dentro de servicios contento serviciosB tendran los siguientes cambios*/
+    padding: 40px 20px;
+    background: black;
+    color: whitesmoke;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.servicios .content .serviciosB:hover{/*cuando pasemos por encima de estos contenedores cambiará su color*/
+    background: #2196f3;
+}
+.servicios .content .serviciosB img{/*la imagen tendra este tamaño dentro del contenedor*/
+    max-width:  150px;
+}
+.servicios .content .serviciosB h2{/*y el texto estas propiedades*/
+    font-size: 20px;
+    font-weight: 600;
+}
+.tatuaje{
+    background: gainsboro;
+}
+.tatuaje .content{/*lo que he hecho es que el contenido se vaya hacia la derecha o si no hay espacio que vaya hacia abajo*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}/*le he aplicado un tamaño y margin por dentro al texto*/
+.tatuaje .content .tatuajeB{
+width: 50%;
+padding: 20px;
+}
+.tatuaje .content .tatuajeB img{/*le he aplicado imagenes con este tamaño*/
+    max-width: 100%;
+}
+.testimonio{/*al bloque le he puesto este color de fondo*/
+    background: #f7f7f7;
+}
+.testimonio .content{/*lo que hay dentro de testimonio , es decir, el contenido irá con un disposicion flex y el justificado irá entre*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;/*La etiqueta Wrap, se emplea para que puedan dividirse si no caben o forzar que no se dividan.*/
+}
+.testimonio .content .testimonioB{/*le he puesto un fondo celeste con una anchura maxima del 50% entre 40px de 60 de ancho y 40 de largo y un margen entre las dos de 20px*/
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+.testimonio .content .testimonioB p{/*le estoy diciendo que la etiqueta p que esta dentro de estas clases tendra estas propiedades estilo de la letra italic , con tamaño de la fuente 16px ,etc*/
+     color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+.testimonio .content .testimonioB h3{/*dentro de testimonio aplicamos el content osea las propiedades que le estoy aplicando a todos las clases que he ido creando , el content es para que todos tengan el mismo contenido , y ademas al h3 le estoy aplicando estas propiedades*/
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+/*lo mismo que hice en la anterior la hago aqui pero la diferencia es que ahora solo le pongo propiedades al span*/
+.testimonio .content .testimonioB h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.infocontacto h3 {/*aqui al texto "informacion de contacto le estoy aplicando estas propiedades"*/
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #111;
+}
+.infocontacto{
+    min-width: 40%;
+}
+.contactoB{
+    position:relative ;/*lo que estoy haciendo es desplazar la caja a partir de su posicion original*/
+}
+.contactoB .caja{/*La propiedad de display flex, ayuda a colocar las cajas como si fueran celdas de tablas, con un comportamiento predecible y adaptable*/
+    position:relative ;
+    padding: 20px 0;/*/con un margen por dentro de 20px*/
+    display: flex;
+}
+.contactoB .caja .texto{
+    /*al contenedor o clase llamada texto , es decir que a las etiquetas p*/
+    display: flex;/*coloco las cajas mas adapatables a la pagina*/
+    margin-left: 20px;/*con un margen hacia la izquier de 20px*/
+    font-size: 16px; /*con el tamaño de la fuente, es decir , de las letras de 16px*/
+    color: black;/*con un color de texto negro*/
+    flex-direction: column;/*direccion del flex en columnas es decir una debajo de otra*/
+    font-weight: 300;/*con el ancho de la fuente de 600*/
+}
+.contactoB .caja .texto h3{/*al titulo h3 le aplico un tamaño de fuente un poquito mayor que el texto*/
+    font-weight: 500;
+    color: #2196f3;/*con el color del texto cyan*/
+    margin-bottom: 0;/*sin ningun margen*/
+}
+.copyright{/*este sera el texto acerca del copy de la pagina*/
+    background: #fff;/*con un color de fondo igual que el anterior contenedor con un color de text negro*/
+    color: #111;
+    text-align: center;/*y el texto centrado en medio de la pagina*/
+    padding: 10px;/*con un margen por dentro de 10px*/
+}
+/*Ahora vamos a aplicar el RESPONSIVE*/
+@media (max-width: 991px)/*poniendo esto le estoy dando a entender que la prioridad de visualizacion de la pagina va a ser en PC*/
+{/*y despues dispositivos con pixeles mas pequeños pero mas adelante*/
+    header,
+    header.sticky/*elemento sticky se "adhiere" a su ancestro más cercano que tiene un "mecanismo de desplazamiento", es decir al scroll que pusimos anteriormente*/
+    {
+        padding: 20px 50px;/*le digo que tanto al margen por dentro el bloque del header y del sticky será esta propiedad*/
+        z-index: 1000; /*le he asignado un numero, se indentificara su posicion de visualizacion con este numero*/ 
+    }
+    .menu
+    {/*le acabo de decir que se posicione en columnas una debajo de otra con un margen por dentro y texto centrado*/
+        position: fixed;/*se moverá sin crearse ningun espacio para el elemento sde la pagina*/
+        top: 75px ;/*la parte de arriba , es decir el eader lo hago mas grande para que tape lo que tiene debajo de el*/
+        left: -100%;/*le estoy diciendo que se posicione a la izquierda del todo , es decir, incuso fuera del rango de la pagina web*/
+        display: block;/*el menu se convierte en un bloque de x tamaño y centrado*/
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;/*como hemos visto en clase le asignamos tamaño en porcentajes no en pixeles*/
+        height: 100vh; /*el largo será esto*/
+        background: #fff;/*le he puesto un color de fondo blanco para hacer que se visualice como un menú único desapareciendo lo de detrás*/
+        transition: 0.5s;/*con una transicion muy corta de tiempo, es decir lo que tarda en verse*/
+        z-index: 999;/*como se ve ahora a este le he aplicado otro index , le he asignado otro numero para un permiso de ejecucion o visualizacion*/
+        border-top: 1px solid rgba(0,0,0,0.2)/*un borde en la parte de arriba de 1px con estilo solido*/
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li a/*le estoy dando color negro a las letras del menu*/
+    {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle
+    {/*el toggle es el menu arriba a la derecha que tengo y se muestra*/
+        width: 40px;/*tamaño de este bloque va a ser 40px*/
+        height: 40px;/*tamaño de arriba hacia abajo 40px tambien*/
+        background: url(../imagenes/menu.png);/*para jugar con el efeccto optico voy a meter un icono de menu , cogido de google imagenes*/
+        background-position: center;/*va a estar la imagen centrada arriba a la derecha*/
+        background-repeat: no-repeat;/*y sin repetirse la imagen porque sino el efecto visual saldria mal*/
+        background-size: 30px;/*y el tamaño del fondo es de 30px*/
+        cursor: pointer;/*hacemos que el curso cuando se posiciones encima de la imagen la tome como un punto de acceso por asi decirlo*/
+    }
+    .toggle.active
+    {
+        background: url(../imagenes/close.png);/*para jugar con el efeccto optico voy a meter un icono de menu , cogido de google imagenes*/
+        background-position: center;/*va a estar la imagen centrada arriba a la derecha*/
+        background-repeat: no-repeat;/*y sin repetirse la imagen porque sino el efecto visual saldria mal*/
+        background-size: 25px;/*y el tamaño del fondo es de 30px*/
+        cursor: pointer;/*hacemos que el curso cuando se posiciones encima de la imagen la tome como un punto de acceso por asi decirlo*/
+    }
+    header.sticky .toggle{/*lo que estoy haciendo es que las imagenes que puse de menu y closemnu invierto su rango de color , por ejemplo puse 1*/
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;/*le estoy dando dos margenes por dentro de 100px de ancho y 50px de largo*/
+    }/*le estoy aplicando tanto a la clase banner del html index y el ban del html dogs tatto estas propiedades*/
+    .banner{
+        padding: 150px 50px 100px;/*un margen interno*/
+    }
+    .banner h2{
+        font-size: 1.5em;/*tamaño de la fuente*/
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .ban{
+        padding: 150px 50px 100px;/*un margen interno*/
+    }
+    .ban h2{
+        font-size: 1.5em;/*tamaño de la fuente*/
+    }
+    .ban h3{
+        font-size: 1em;
+    }
+    .btn{/*el sobre nosotros que aparece en pantalla lo estamos ajustando para que tenga un margen en la parte de arriba de 10px*/
+        margin-top: 10px;
+        padding: 10px 20px;/*un margen interno de bloque con estas propiedades*/
+        font-size: 16px;/*y tamaño de fuente con estas propiedades*/
+    }
+    .btc{/*ahora hacemos lo mismo pero para la clase btc del html dogs tattoo*/
+        margin-top: 10px;/*estamos ajustando para que tenga un margen en la parte de arriba de 10px*/
+        padding: 10px 20px;/*un margen interno de bloque con estas propiedades*/
+        font-size: 16px;/*y tamaño de fuente con estas propiedades*/
+    }
+    .heading h2{/*empiezo a ajustar propiedades del contenido de la pagina web*/
+        font-size: 24px;
+    }
+    .contentBx h3{/*ahora ajusto lo que hay dentro de estas dos clases para que el tamaño de fuente sea esta*/
+        font-size: 20px;
+    }
+    .content{/*en breve resumen lo que he hecho es que todo el contenido de la pagina se posiciones en columnas*/
+        flex-direction: column;
+    }
+    .w50{/*la imagen dogs.png tendra estas propiedas , bueno mas bien la imagen no ,el bloque donde esta la imagen tendra estas propiedades*/
+        margin-bottom: 20px;
+    }
+    .servicios .content .serviciosB{
+        margin: 10px;
+    }
+    .tatuaje .content .tatuajeB{
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonio .content .testimonioB{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .infocontacto{
+        margin: 20px 0;
+    }
+}
+@media (max-width: 600px)/*poniendo esto le estoy dando a entender la visualizacion de la pagina va a ser en table o movil*/
+{/*y despues dispositivos con pixeles mas pequeños pero mas adelante*/
+    header,
+    header.sticky/*elemento sticky se "adhiere" a su ancestro más cercano que tiene un "mecanismo de desplazamiento", es decir al scroll que pusimos anteriormente*/
+    {
+        padding: 20px 20px;/*le digo que tanto al margen por dentro el bloque del header y del sticky será esta propiedad*/
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    section {/*el section se aplicara con estas propiedaes cuando la resolucion de la pantalla sea 600px*/
+        padding: 100px 20px;
+    }
+}
+
+video{
+    width: 50%;
+}
+.videoB{
+    text-align: center;
+    margin: 10px;
+    display:inline-block ;
+    flex-direction: column;
+}
+.videoB h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+}
